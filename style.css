@@ -1,0 +1,485 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+    background-color: #2e0752;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1e053a;
+}
+
+.logo h3 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #a38aba;
+    font-size: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: rgb(39, 200, 79);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: rgb(34, 178, 71);
+    transform: scale(1.05);
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: 'Playfair Display', serif;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Search Poet Feature */
+.search-poet {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-poet input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #2e0752;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #e6b800;
+}
+
+/* Subscribe Now Button */
+.subscribe-now {
+    /* Additional styling if needed */
+}
+
+.subscribe-button {
+    padding: 15px 30px;
+    background-color: #3a86ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #2c66cc;
+}
+
+/* About Us Section */
+.about-us {
+    max-width: 800px;
+    margin: 50px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Featured Poets Section */
+.featured-poets {
+    max-width: 1200px;
+    margin: 50px 20px;
+    text-align: center;
+}
+
+.featured-poets h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.poet-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.poet-card {
+    background-color: #3e054b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.poet-card:hover {
+    transform: translateY(-10px);
+}
+
+.poet-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.poet-card h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+}
+
+.poet-card p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Testimonials Section */
+.testimonials {
+    max-width: 800px;
+    margin: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #3e054b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.testimonial-card h4 {
+    font-size: 16px;
+    color: #a38aba;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #1e053a;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-column h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-column ul li a:hover {
+    color: #a38aba;
+}
+
+.social-media .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media .social-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%); /* Ensure icons are white */
+    transition: transform 0.3s ease;
+}
+
+.social-media .social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ccc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .poet-cards {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .search-poet {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-poet input[type="text"] {
+        width: 100%;
+    }
+
+    .hero-actions {
+        gap: 15px;
+    }
+
+    .featured-poets .poet-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-poets .poet-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .testimonials .testimonial-cards {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .subscribe-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+.card-1 {
+    animation-name: slideFromLeft;
+    animation-delay: 0.2s;
+}
+.card-2 {
+    animation-name: slideFromBottom;
+    animation-delay: 0.2s;
+}
+.card1 {
+    animation-name: slideFromRight;
+    animation-delay: 0.2s;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideFromLeft {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
