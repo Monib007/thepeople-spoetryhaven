@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,8 +24,22 @@ body {
     background-color: #1e053a;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .logo h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 1.5px;
     font-family: 'Playfair Display', serif;
@@ -147,11 +161,6 @@ body {
 
 .search-button:hover {
     background-color: #e6b800;
-}
-
-/* Subscribe Now Button */
-.subscribe-now {
-    /* Additional styling if needed */
 }
 
 .subscribe-button {
@@ -335,7 +344,7 @@ body {
 .social-media .social-icons a img {
     width: 24px;
     height: 24px;
-    filter: invert(100%); /* Ensure icons are white */
+    filter: invert(100%); 
     transition: transform 0.3s ease;
 }
 
@@ -437,49 +446,5 @@ body {
     .footer-column {
         max-width: 300px;
         text-align: center;
-    }
-}
-
-.card-1 {
-    animation-name: slideFromLeft;
-    animation-delay: 0.2s;
-}
-.card-2 {
-    animation-name: slideFromBottom;
-    animation-delay: 0.2s;
-}
-.card1 {
-    animation-name: slideFromRight;
-    animation-delay: 0.2s;
-}
-
-@keyframes slideFromLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes slideFromRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes slideFromLeft {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
     }
 }
